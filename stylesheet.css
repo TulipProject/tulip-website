@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    text-align: center;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("images/home_page_banner.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1 {
+    padding-top: 20%;
+    font-family: 'Montserrat', sans-serif; /*change later*/
+    color: white;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5%;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2%;
+  }
