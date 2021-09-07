@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>The Tulip Project</title>
+  </head>
+  <body>
+     <!-- nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+          <img src="./images/Logo.png" width=60px height=auto style="margin-left: 20px;">
+          <p style="margin-left: 20px; margin-top: 20px; font-family: 'Sansita Swashed', cursive; font-size: 30px; color: white;">Tulip</p>
+        <div class="container-fluid" >
+          <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav" >
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-about" aria-selected="true" 
+                    style="color: #FF7D7D; margin-right: 50px; margin-top: 20px; font-size: 20px;" 
+                onclick="changeAboutColor()" onmouseover="document.getElementById('pills-about-tab').style.color = 'white'" onmouseout="if (document.getElementById('pills-about-tab').style.color == 'white' && document.getElementById('pills-about-tab').style.backgroundColor != 'rgb(255, 125, 125)') { document.getElementById('pills-about-tab').style.color = '#FF7D7D'}">About</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-resources-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-resources" aria-selected="false" 
+                    style="color: #FF7D7D; margin-right: 50px; margin-top: 20px; font-size: 20px;" onclick="changeResourcesColor()" 
+                onmouseover="document.getElementById('pills-resources-tab').style.color = 'white'" onmouseout="if (document.getElementById('pills-resources-tab').style.color == 'white' && document.getElementById('pills-resources-tab').style.backgroundColor != 'rgb(255, 125, 125)'){document.getElementById('pills-resources-tab').style.color = '#FF7D7D'}">Resources</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-events-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-events" aria-selected="false" 
+                    style="color: #FF7D7D;   margin-right: 50px; margin-top: 20px; font-size: 20px;" onclick="changeEventsColor()"
+                onmouseover="document.getElementById('pills-events-tab').style.color = 'white'" onmouseout="if (document.getElementById('pills-events-tab').style.color == 'white' && document.getElementById('pills-events-tab').style.backgroundColor != 'rgb(255, 125, 125)'){document.getElementById('pills-events-tab').style.color = '#FF7D7D'}">Events</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-contact-tab"  data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" 
+                    style="color: #FF7D7D;  margin-top: 20px; font-size: 20px;" onclick="changeContactColor()"
+                onmouseover="document.getElementById('pills-contact-tab').style.color = 'white'" onmouseout="if (document.getElementById('pills-contact-tab').style.color == 'white'  && document.getElementById('pills-contact-tab').style.backgroundColor != 'rgb(255, 125, 125)'){document.getElementById('pills-contact-tab').style.color = '#FF7D7D'}">Contact Us</button>
+                </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- download section -->
+      <div id="download-section">
+        <p style="text-align: center; padding-top: 40px; font-size: 30px; font-family: 'Noto Sans', sans-serif;">Download the Tulip App</p>
+        <img class="zoom" src="./images/googleplay.png" width=180px height=auto style="margin-left: 700px;">
+        <img class="zoom" src="./images/appstore.png" width=180px height=auto style= "margin-left: 500px; margin-top: -210px;">
+      </div>
+
+      <!-- Bio Section -->
+      <div class="flex-container">
+        <div>
+            <h1 style="font-family: 'Noto Sans', sans-serif;;">What is the Tulip Project?</h1>
+            <br>
+            <p style="margin-right: 50px; line-height: 60px; font-size: 20px; font-family: 'Noto Sans', sans-serif;">The Tulip Project is a nonprofit organization dedicated to de-stigmatizing and spreading awareness about female puberty and menstrual health. Through our mobile app, Tulip, and various community events, we hope to educate and empower women around the world.</p>
+        </div>
+        <img src="./images/flower.png" width=400px height=auto style="margin-left: 50px; margin-right: 70px;">
+        <div>
+    </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <!-- FAQ section -->
+      <h1 style="text-align: center;">FAQ's</h1>
+      <br>
+      <br>
+      <br>
+
+      <p style="margin-left: 80px;">
+        <button id="btn1" class="btn btn-primary" onclick="changeColor()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+          What does the Tulip Project do? &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&#8595;
+        </button>
+      </p>
+
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body" style="margin-left: 80px; z-index: -1;">
+          In addition to our mobile app that provides educational resources for young girls, we also hold menstrual product drives, workshops, and other community events.
+        </div>
+      </div>
+      <br>
+      
+
+      <p style="margin-left: 80px;">
+        <button id="btn2" class="btn btn-primary" onclick="changeColor()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+          Where is the Tulip Project located? &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&#8595;
+        </button>
+        <br>
+      </p>
+      
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body" style="margin-left: 80px; z-index: -1;">
+          The Tulip Project is an international organization primarily based in Katy, Texas, USA.
+        </div>
+      </div>
+      <br>
+
+      <p style="margin-left: 80px;">
+        <button id="btn3" class="btn btn-primary" onclick="changeColor()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+          Why is education about female puberty important? &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&#8595;
+        </button>
+        <br>
+      </p>
+      
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body" style="margin-left: 80px; z-index: -1;">
+          Around the world girls face a lack of information about their own body development as well as negative stigmas and misinformation which can be dangerous and unhealthy. Because of this, it is important to educate everyone about female puberty in order to keep girls safe, healthy, and happy.
+        </div>
+      </div>
+
+      <br>
+      <p style="margin-left: 80px;">
+        <button id="btn4" class="btn btn-primary" onclick="changeColor()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+          How can I get involved in the Tulip Project? &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&#8595;
+        </button>
+        <br>
+      </p>
+      
+      <div class="collapse" id="collapseExample4">
+        <div class="card card-body" style="margin-left: 80px; z-index: -1;">
+          Any person of any gender is encouraged to apply for the Tulip team here: <a target="_blank" href="https://docs.google.com/forms/d/1Fji9cDeZqFTBLHguo1B9Fz-5EeFPcRUqVzD9DQh4Hv0/edit">https://docs.google.com/forms/d/1Fji9cDeZqFTBLHguo1B9Fz-5EeFPcRUqVzD9DQh4Hv0/edit</a>
+        </div>
+      </div>
+
+      <br>
+      <p style="margin-left: 80px;">
+        <button id="btn4" class="btn btn-primary" onclick="changeColor()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+          How can I support the Tulip Project? &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&#8595;
+        </button>
+        <br>
+      </p>
+      
+      <div class="collapse" id="collapseExample5">
+        <div class="card card-body" style="margin-left: 80px; z-index: -1;">
+          You can support the Tulip Project by downloading our mobile app, participating in our ongoing events (located in the ‘events’ tab), joining our team, following us on social media, or sponsoring through donations.
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <!-- follow us section -->
+      <div id="social-media">
+          <h2 style="margin-left: 660px; padding-top: 20px">Follow Us</h2>
+          <a href="https://www.instagram.com/thetuliproject/" target="_blank">
+        <img src="./images/instagram.png" class="zoom" style="margin-left: 550px; margin-top: 40px;">
+          </a>
+          <img src="./images/discord.png" class="zoom" style="margin-left: 50px; margin-top: 40px;">
+
+          <a href="https://www.facebook.com/thetuliproject/" target="_blank">
+            <img src="./images/facebook.png" class="zoom" style="margin-left: 50px; margin-top: 40px;">
+              </a>
+
+          <a href="https://twitter.com/thetuliproject" target="_blank">
+            <img src="./images/twitter.png" class="zoom" style="margin-left: 50px; margin-top: 40px;">
+              </a>
+      </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>
