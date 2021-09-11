@@ -1,0 +1,57 @@
+
+.navbar  {
+  background-color: #FFCCCC;
+  opacity: 0.9;
+  height: 90px;
+}
+
+.navbar .container-fluid .collapse .nav .nav-item button:focus {
+  background-color: #FF7D7D;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+#download-section {
+  background: radial-gradient(white, gray);
+  margin-top: 122px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 350px;
+}
+
+.zoom:hover {
+  transform: scale(1.03);
+}
+
+.flex-container {
+  margin-top: 50px;
+  margin-left: 90px;
+  display: flex;
+}
+
+.btn {
+  background-color: #FF7D7D;
+  border: 2px solid #FF7D7D;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+  border: none;
+  
+}
+
+#social-media{
+  background-color: #d3d3d3;
+  height: 180px;
+  opacity: 0.9;
+}
+
+
+
