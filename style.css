@@ -54,4 +54,44 @@
 }
 
 
+/* Recources Page Styles */
+
+.article {
+  margin:40px 20px; 
+  background-color: #ececec; 
+  outline: 3px solid rgb(131, 129, 129);
+  padding: 20px;
+
+}
+
+.article img{
+  width: 300px;
+  outline: 3px solid rgb(131, 129, 129);
+}
+
+/* .article-body {
+  padding-left:20;
+} */
+
+.article-title{
+  height: 50px;
+  outline: 3px solid rgb(131, 129, 129);
+  margin-right: 40px;
+  padding: 15px;
+} 
+
+.article-content {
+  margin-top: 20px;
+  outline: 3px solid rgb(131, 129, 129);
+  padding: 15px;
+  margin-right: 40px;
+
+}
+
+.resources {
+  height: 150px;
+  outline: 3px solid rgb(131, 129, 129);
+  margin: 0px 80px;
+  background-color: #ececec;
+}
 
