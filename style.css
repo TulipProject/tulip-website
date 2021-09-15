@@ -118,9 +118,9 @@
   top: -150%;
   left: 50%;
   opacity: 0;
-  transition: top 0ms ease-in-out 500ms,
-              opacity 500ms ease-in-out 0ms,
-              transform 50ms ease-in-out 0ms;
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms;
 }
 
 .article-popup.active {
@@ -128,8 +128,8 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);  
   transition: top 0ms ease-in-out 0ms,
-              opacity 500ms ease-in-out 0ms,
-              transform 50ms ease-in-out 0ms;
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms;
 }
 
 .article-popup .close-btn {
