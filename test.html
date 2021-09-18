@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+
+    <A HREF="resources.html" onClick="return popup(this, 'notes')">my popup</A>
+    <SCRIPT TYPE="text/javascript"> 
+        function popup(mylink, windowname) { 
+            if (! window.focus)return true; 
+            var href; 
+            if (typeof(mylink) == 'string') href=mylink; 
+            else href=mylink.href; 
+        
+            window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
+            return false; 
+            } 
+    </SCRIPT>
+</body>
+</html>
