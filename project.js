@@ -81,6 +81,7 @@ $(document).click(function(){
         document.getElementById('pills-contact-tab').style.backgroundColor = "#FFCCCC";
 });
 
+// FAQ section buttons
 function changeColor() {
     document.getElementById('btn1').style.backgroundColor = "#FF7D7D";
     document.getElementById('btn1').style.outline = "none";
