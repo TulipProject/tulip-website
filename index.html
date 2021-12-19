@@ -12,14 +12,20 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
 
     <title>The Tulip Project</title>
   </head>
-  <body>
+  <body style="background-color: #f5f2ea">
      <!-- nav bar -->
       <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-          <img src="./images/Logo.png" width=60px height=auto style="margin-left: 20px;">
-          <p style="margin-left: 20px; margin-top: 20px; font-family: 'Sansita Swashed', cursive; font-size: 30px; color: white;">Tulip</p>
+        <!--logo icon-->
+          <img src="./images/tuliplogo.png" width=60px height=auto style="margin-left: 6em;">
+          <p style="margin-left: 1em; margin-top: 1em; font-size: 2em; color: #FF7D7D;">Tulip</p>
+
         <div class="container-fluid" >
           <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav" >
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -48,30 +54,55 @@
         </div>
       </nav>
 
-      <!-- download section -->
-      <div id="download-section">
-        <p style="text-align: center; padding-top: 40px; font-size: 30px; font-family: 'Noto Sans', sans-serif;">Download the Tulip App</p>
-        <img class="zoom" src="./images/googleplay.png" width=180px height=auto style="margin-left: 700px;">
-        <img class="zoom" src="./images/appstore.png" width=180px height=auto style= "margin-left: 500px; margin-top: -210px;">
-      </div>
 
       <!-- Bio Section -->
-      <div class="flex-container">
-        <div>
-            <h1 style="font-family: 'Noto Sans', sans-serif;;">What is the Tulip Project?</h1>
-            <br>
-            <p style="margin-right: 50px; line-height: 60px; font-size: 20px; font-family: 'Noto Sans', sans-serif;">The Tulip Project is a nonprofit organization dedicated to de-stigmatizing and spreading awareness about female puberty and menstrual health. Through our mobile app, Tulip, and various community events, we hope to educate and empower women around the world.</p>
+      <div id="bio">
+      <div class="container">
+        <div class="row" style="margin-left:100px; margin-right:100px">
+          <div class="col-9">
+            
+              <h1>What is the Tulip Project?</h1>
+            <div style="margin-left:50px; margin-top:30px; margin-right:3em;font-size:1.25em">
+              <p>The Tulip Project is a student-led nonprofit organization dedicated to destigmatizing and spreading awareness about female puberty and menstrual health. Through our mobile app, Tulip, and various community events, we strive to educate and empower women around the world.</p>
+          </div>
+            </div>
+          <div class="col-3">
+          <img src="./images/tulip.png" width=300px height=auto>
         </div>
-        <img src="./images/flower.png" width=400px height=auto style="margin-left: 50px; margin-right: 70px;">
-        <div>
-    </div>
+        </div>
       </div>
+    </div>
 
-      <br>
-      <br>
-      <br>
+    <!--gradient-->
+  <p id="gradient">&nbsp</p>
 
-      <!-- FAQ section -->
+<!--faq-->
+    <div class="container" style="margin:4em 14em">
+      <div class="row">
+        <div class="col-7">
+          <p class="questions">Why is education about female puberty important?</p>
+          <div class="answers">
+            <p>Around the world girls face a lack of information about their own body development as well as negative stigmas and misinformation which can be dangerous and unhealthy. Because of this, it is important to educate everyone about female puberty in order to keep girls safe, healthy, and happy.</p>
+          </div>
+        </div>
+        <div class="col-7 "style="margin-left:20em">
+          <p class="questions" align="right">Where is the Tulip Project located?</p>
+          <div class="answers">
+            <p><br>The Tulip Project is an international organization primarily based in Houston, Texas, USA.</p>
+          </div>
+        </div>
+        <div class="col-7" style="margin-bottom: 5em">
+          <p class="questions">How can I support the Tulip Project?</p>
+          <div class="answers">
+            <p>You can support the Tulip Project by downloading our mobile app (coming soon), participating in our ongoing events (located in the ‘events’ tab), joining our team, following us on social media, joining our community on Discord, or sponsoring through donations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <!-- faq toggles
       <h1 style="text-align: center;">FAQ's</h1>
       <br>
       <br>
@@ -146,29 +177,24 @@
         </div>
       </div>
 
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    -->
 
         <!-- follow us section -->
-      <div id="social-media">
-          <h2 style="margin-left: 660px; padding-top: 20px">Follow Us</h2>
+      <div id="social-media"align="center">
           <a href="https://www.instagram.com/thetuliproject/" target="_blank">
-        <img src="./images/instagram.png" class="zoom" style="margin-left: 550px; margin-top: 40px;">
+        <img src="./images/instagram.png" class="zoom" style="margin: 25px;width:2em">
           </a>
-          <img src="./images/discord.png" class="zoom" style="margin-left: 50px; margin-top: 40px;">
+          <img src="./images/discord.png" class="zoom" style="margin:25px;width:2em">
 
           <a href="https://www.facebook.com/thetuliproject/" target="_blank">
-            <img src="./images/facebook.png" class="zoom" style="margin-left: 50px; margin-top: 40px;">
+            <img src="./images/facebook.png" class="zoom" style="margin:25px;width:2em">
               </a>
 
           <a href="https://twitter.com/thetuliproject" target="_blank">
-            <img src="./images/twitter.png" class="zoom" style="margin-left: 50px; margin-top: 40px;">
+            <img src="./images/twitter.png" class="zoom" style="margin:25px;width:2em">
               </a>
       </div>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 

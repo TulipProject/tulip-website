@@ -1,7 +1,9 @@
+*{
+  font-family: 'Comfortaa', cursive;
 
+}
 .navbar  {
-  background-color: #FFCCCC;
-  opacity: 0.9;
+  background-color: #f7cfcf;
   height: 90px;
 }
 
@@ -29,10 +31,16 @@
   transform: scale(1.03);
 }
 
-.flex-container {
-  margin-top: 50px;
-  margin-left: 90px;
-  display: flex;
+
+#bio {
+  background-color: #f7cfcf;
+  padding:14em 1em 7em 1em;
+}
+
+#gradient{
+  background: rgb(245,242,234);
+  background: linear-gradient(0deg, rgba(245,242,234,1) 25%, rgba(247,207,207,1) 75%);
+  height:5em;
 }
 
 .btn {
@@ -44,13 +52,26 @@
   outline: none !important;
   box-shadow: none;
   border: none;
-  
+}
+
+.questions{
+  margin-top: 3em;
+  margin-bottom: -.5em;
+  font-size:1.5em;
+}
+
+.answers{
+  background-color:  #f7d4d4;
+  padding:2em;
+  border-radius: 20px;
+  height:10em;
 }
 
 #social-media{
-  background-color: #d3d3d3;
-  height: 180px;
+  background-color: #f0dada;
+  height: 8em;
   opacity: 0.9;
+  
 }
 
 
